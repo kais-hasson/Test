@@ -1,0 +1,48 @@
+.div {
+    display: flex;
+    flex-flow: column;
+    background: round;
+    flex-grow: 1;
+    height: 25%;
+    border-style: outset;
+    border-radius: 28px;
+    box-shadow: black;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="div"] {
+      width: 40%;
+    }}  
+#main{
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+ .p{
+    flex-flow: column wrap;
+    background: beige;
+       margin: 0px; 
+       padding: 0px;
+    font-size: 36px;
+    font-style: inherit;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border-radius: 28px;
+    justify-content: space-between;
+    filter: opacity(0.5);
+
+} 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="p"] {
+        font-size: 20px;    }}  
+._name {
+     margin-top: 0%; 
+}
+._price {
+    margin-top: 50%; 
+    margin-bottom: 0%;
+}
